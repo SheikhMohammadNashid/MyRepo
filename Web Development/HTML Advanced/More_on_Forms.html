@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Forms in HTML</title>
+</head>
+
+<body>
+    <h1>Masjid census Forms</h1>
+
+    <form action="/process.php">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name">
+        <br><br>
+
+        <lable for="phone">Phone</lable>
+        <input type="tel" id="phone" placeholder="Your Phone Number">
+        <br><br>
+
+        <lable for="pass">Password</lable>
+        <input type="password" id="pass" placeholder="Your Password">
+        <br><br>
+
+        <lable for="age">Age</lable>
+        <input type="number" id="age" placeholder="Your Age">
+        <br><br>
+
+        <lable for="gender">Male</lable>
+        <input type="radio" id="gender" name="gender" value="male">
+
+        <lable for="gender">Female</lable>
+        <input type="radio" id="gender" name="gender" value="female">
+
+        <lable for="gender">Other</lable>
+        <input type="radio" id="gender" name="gender" value="other">
+        <br>
+
+        <p>
+        <h2>How many times you pray in masjid<h2></h2>
+            </p>
+            <lable for="five">Five Times</lable>
+            <input type="checkbox" id="five" name="five" value="five">
+            <br><br>
+
+            <lable for="less">Less</lable>
+            <input type="checkbox" id="less" name="less" value="less">
+            <br><br>
+
+            <lable for="colony">Choose Colony</lable>
+            <select id="colony" name="colony">
+                <option value="gulberga">Gulberga</option>
+                <option value="firdous">Firdous</option>
+                <option value="alnoor">Alnoor</option>
+
+            </select>
+            <br><br>
+
+            <lable for="message">Your Message:</lable><br><br>
+            <textarea id="message" name="message" rows="10" cols="50"
+                placeholder="Type your message here..."></textarea>
+            <br><br>
+
+
+
+            <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+
+</html>
