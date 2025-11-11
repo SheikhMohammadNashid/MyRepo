@@ -1,0 +1,64 @@
+Objective: Perform the basic "out-of-the-box" setup, secure the device, and configure it for remote management.
+
+
+Steps:
+
+1.Connect via Console Cable and Enter Privileged EXEC Mode.
+You will start at the Switch> prompt.
+Switch> enable
+Switch#
+
+
+2.Enter Global Configuration Mode.
+Switch# configure terminal
+Enter configuration commands, one per line.  End with CNTL/Z.
+Switch(config)#
+
+
+3.Set a Unique Hostname.
+This is crucial for identifying the device on the network.
+Switch(config)# hostname SW4
+SW4(config)#
+
+
+4.Set a Secure enable Password.
+enable secret is encrypted, enable password is not. Always use secret.
+SW4(config)# enable secret verventech123
+
+
+5.Secure the Console Line.
+This requires a password to log in via the console cable.
+SW4(config)# line console 0
+SW4(config-line)# password verventech123
+SW4(config-line)# login
+SW4(config-line)# exit
+
+
+6.Create a Management SVI (Switch Virtual Interface).
+To manage the switch over the network (e.g., SSH/Telnet), it needs an IP address. We'll assign it to VLAN 1 (the default management VLAN).
+SW4(config)# interface vlan 1
+SW4(config-if)# ip address 192.168.1.10 255.255.255.0
+SW4(config-if)# no shutdown
+SW4(config-if)# exit
+
+
+7.Set the Default Gateway.
+This is the router's IP address. The switch needs this to communicate with devices outside its own subnet (like your management PC if it's on a different network).
+SW4(config)# ip default-gateway 192.168.1.1
+
+8.Set a Message-of-the-Day (MOTD) Banner.
+This is a legal warning for anyone logging in.
+SW4(config)# banner motd # This Switch is for verventech#
+
+9.Save Your Configuration.
+This copies the running-config (in RAM) to the startup-config (in NVRAM), so the configuration persists after a reboot.
+SW4# copy running-config startup-config
+Destination filename [startup-config]? [Enter]
+Building configuration...
+[OK]
+OR
+SW4# write
+Verification Commands:
+1.show running-config: View the entire active configuration.
+2.show startup-config: View the entire saved configuration.
+3.show ip interface brief: See the status and IP address of your interfaces

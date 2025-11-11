@@ -1,0 +1,52 @@
+Objective: Segment the switch into two separate broadcast domains (VLANs) for "Sales" and "R&D" departments.
+
+Steps:
+
+1.Create the VLANs.
+Creating and naming VLANs makes them easier to manage.
+
+SW4(config)# vlan 10
+SW4(config-vlan)# name SALES
+SW4(config-vlan)# exit
+SW4(config)# vlan 20
+SW4(config-vlan)# name R&D
+SW4(config-vlan)# exit
+
+
+2.Verify VLAN Creation.
+SW4# show vlan brief
+
+You will see VLAN 1 (default) and your new VLANs 10 (SALES) and 20 (R&D). All ports are in VLAN 1 by default.
+
+
+3.Assign Single Ports to an Access VLAN.
+
+We will put port FastEthernet 0/1 into the SALES (VLAN 10) VLAN.
+SW4(config)# interface fastEthernet 0/1
+SW4(config-if)# switchport mode access
+SW4(config-if)# switchport access vlan 10
+SW4(config-if)# exit
+
+
+4.Assign a Range of Ports to an Access VLAN.
+SW4(config)# interface range fa0/13 - 24
+SW4(config-if-range)# switchport mode access
+SW4(config-if-range)# switchport access vlan 10
+SW4(config-if-range)# exit
+
+
+5.SW4(config)# interface range fa0/25 - 36
+SW4(config-if-range)# switchport mode access
+SW4(config-if-range)# switchport access vlan 20
+SW4(config-if-range)# exit
+
+
+Save Your Configuration.
+SW4# copy running-config startup-config
+or
+write
+
+
+Verification Commands:
+1.show vlan brief: You will now see ports Fa0/1, Fa0/2-10 assigned to their respective VLANs.
+2.show interface fa0/1 switchport: Shows detailed switchport information for a specific port.

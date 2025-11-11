@@ -1,0 +1,55 @@
+Objective: Disable insecure Telnet and enable secure SSH for remote management.
+
+
+Steps:
+
+1.Set an IP Domain Name.
+SSH requires a domain name to generate its encryption keys.
+SW4(config)# ip domain-name verventech.local
+
+
+2.Generate Crypto Keys.
+These keys are used to encrypt the SSH session. 1024 bits is a good minimum.
+SW4(config)# crypto key generate rsa
+The name for the keys will be: SW4.verventech.local
+Choose the size of the key modulus in the range of 360 to 4096 bits.
+How many bits in the modulus [512]: 1024
+% Generating 1024 bit RSA keys, keys will be non-exportable...
+[OK] (elapsed time was 1 seconds)
+
+
+3.Create a Local Admin User.
+SSH will authenticate against a local username and password database. We'll create an admin user with privilege level 15 (full access).
+SW4(config)# username admin privilege 15 secret verventech123
+
+Note:
+Cisco IOS devices have 16 privilege levels, numbered 0 through 15.
+These levels allow you to create a "role-based" or tiered access system. A higher number includes all the permissions of the levels below it.
+By default, only three levels are commonly used:
+Level 0 (Zero-level access): This is the most restrictive level, sometimes used for very specific, limited-access accounts. By default, it only includes five commands: logout, enable, disable, help, and exit.
+Level 1 (User EXEC Mode): This is the default level for a standard user when they first log in (Switch>). It's a read-only mode, allowing users to run basic show commands (like show clock or ping) but not make any configuration changes or see the running configuration.
+Level 15 (Privileged EXEC Mode): This is the "enable" mode (Switch#). It has full, unrestricted access to all commands, including configure terminal, reload, and viewing the running-config. This is the level your SSH user is assigned.
+
+
+
+4.Configure the VTY (Virtual) Lines.
+These are the virtual lines for remote access (Telnet/SSH).
+
+login local tells the switch to use the local user database (that we just created) for authentication.
+transport input ssh tells the switch to only allow SSH connections (disabling Telnet).
+
+SW4(config)# line vty 0 15
+SW4(config-line)# login local
+SW4(config-line)# transport input ssh
+SW4(config-line)# exit
+
+
+5.Save Your Configuration.
+SW4# copy running-config startup-config
+
+
+
+Verification Commands:
+1.show ip ssh: Verifies that SSH is enabled.
+2.show run | section vty: Shows the VTY line configuration.
+Test: Try to SSH to your switch's IP (192.168.1.10) from a PC on the same network.
