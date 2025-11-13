@@ -1,0 +1,30 @@
+--- Pinging google.com ---
+OK
+
+--- Pinging youtube.com ---
+OK
+
+--- Pinging facebook.com ---
+OK
+
+--- Pinging amazon.com ---
+FAIL
+
+--- Pinging wikipedia.org ---
+OK
+
+--- Pinging instagram.com ---
+OK
+
+--- Pinging x.com ---
+OK
+
+--- Pinging linkedin.com ---
+OK
+
+--- Pinging reddit.com ---
+OK
+
+--- Pinging netflix.com ---
+FAIL
+

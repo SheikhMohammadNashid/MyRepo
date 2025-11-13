@@ -1,0 +1,84 @@
+--- Pinging google.com ---
+PING google.com (142.250.76.78) 56(84) bytes of data.
+64 bytes from tzdela-aq-in-f14.1e100.net (142.250.76.78): icmp_seq=1 ttl=118 time=20.8 ms
+64 bytes from tzdela-aq-in-f14.1e100.net (142.250.76.78): icmp_seq=2 ttl=118 time=20.0 ms
+64 bytes from tzdela-aq-in-f14.1e100.net (142.250.76.78): icmp_seq=3 ttl=118 time=20.3 ms
+
+--- google.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+rtt min/avg/max/mdev = 20.007/20.347/20.763/0.313 ms
+--- Pinging youtube.com ---
+PING youtube.com (142.250.195.14) 56(84) bytes of data.
+64 bytes from del12s09-in-f14.1e100.net (142.250.195.14): icmp_seq=1 ttl=117 time=38.7 ms
+64 bytes from del12s09-in-f14.1e100.net (142.250.195.14): icmp_seq=2 ttl=117 time=38.5 ms
+64 bytes from del12s09-in-f14.1e100.net (142.250.195.14): icmp_seq=3 ttl=117 time=39.4 ms
+
+--- youtube.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2004ms
+rtt min/avg/max/mdev = 38.450/38.853/39.435/0.421 ms
+--- Pinging facebook.com ---
+PING facebook.com (163.70.145.35) 56(84) bytes of data.
+64 bytes from edge-star-mini-shv-02-del2.facebook.com (163.70.145.35): icmp_seq=1 ttl=56 time=21.0 ms
+64 bytes from edge-star-mini-shv-02-del2.facebook.com (163.70.145.35): icmp_seq=2 ttl=56 time=20.1 ms
+64 bytes from edge-star-mini-shv-02-del2.facebook.com (163.70.145.35): icmp_seq=3 ttl=56 time=19.4 ms
+
+--- facebook.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 19.423/20.182/21.042/0.664 ms
+--- Pinging amazon.com ---
+PING amazon.com (98.87.170.71) 56(84) bytes of data.
+
+--- amazon.com ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 2078ms
+
+--- Pinging wikipedia.org ---
+PING wikipedia.org (103.102.166.224) 56(84) bytes of data.
+64 bytes from text-lb.eqsin.wikimedia.org (103.102.166.224): icmp_seq=1 ttl=55 time=88.6 ms
+64 bytes from text-lb.eqsin.wikimedia.org (103.102.166.224): icmp_seq=2 ttl=55 time=87.8 ms
+64 bytes from text-lb.eqsin.wikimedia.org (103.102.166.224): icmp_seq=3 ttl=55 time=87.3 ms
+
+--- wikipedia.org ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+rtt min/avg/max/mdev = 87.343/87.907/88.604/0.523 ms
+--- Pinging instagram.com ---
+PING instagram.com (163.70.145.174) 56(84) bytes of data.
+64 bytes from instagram-p42-shv-02-del2.fbcdn.net (163.70.145.174): icmp_seq=1 ttl=56 time=19.6 ms
+64 bytes from instagram-p42-shv-02-del2.fbcdn.net (163.70.145.174): icmp_seq=2 ttl=56 time=19.0 ms
+64 bytes from instagram-p42-shv-02-del2.fbcdn.net (163.70.145.174): icmp_seq=3 ttl=56 time=19.1 ms
+
+--- instagram.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 18.973/19.216/19.604/0.276 ms
+--- Pinging x.com ---
+PING x.com (162.159.140.229) 56(84) bytes of data.
+64 bytes from 162.159.140.229: icmp_seq=1 ttl=58 time=19.8 ms
+64 bytes from 162.159.140.229: icmp_seq=2 ttl=58 time=19.1 ms
+64 bytes from 162.159.140.229: icmp_seq=3 ttl=58 time=19.6 ms
+
+--- x.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2003ms
+rtt min/avg/max/mdev = 19.135/19.525/19.829/0.289 ms
+--- Pinging linkedin.com ---
+PING linkedin.com (150.171.22.12) 56(84) bytes of data.
+64 bytes from 150.171.22.12: icmp_seq=1 ttl=120 time=19.9 ms
+64 bytes from 150.171.22.12: icmp_seq=2 ttl=120 time=19.3 ms
+64 bytes from 150.171.22.12: icmp_seq=3 ttl=120 time=19.8 ms
+
+--- linkedin.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+rtt min/avg/max/mdev = 19.338/19.682/19.910/0.247 ms
+--- Pinging reddit.com ---
+PING reddit.com (151.101.129.140) 56(84) bytes of data.
+64 bytes from 151.101.129.140: icmp_seq=1 ttl=59 time=20.2 ms
+64 bytes from 151.101.129.140: icmp_seq=2 ttl=59 time=18.6 ms
+64 bytes from 151.101.129.140: icmp_seq=3 ttl=59 time=19.1 ms
+
+--- reddit.com ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2004ms
+rtt min/avg/max/mdev = 18.645/19.320/20.231/0.668 ms
+--- Pinging netflix.com ---
+PING netflix.com (18.200.8.190) 56(84) bytes of data.
+
+--- netflix.com ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 2042ms
+
