@@ -1,0 +1,8 @@
+apt update
+apt install -y vlc
+apt install -y neofetch
+apt install -y git
+apt install -y htop
+apt install -y openssh-server
+apt install -y curl
+apt install -y vim
