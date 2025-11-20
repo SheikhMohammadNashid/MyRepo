@@ -1,0 +1,20 @@
+fatih@fatih-MS-7C96:~/Documents/Bash Scripting/coping file to vm using ssh$ ./copyfileshh.sh
+nashid.txt                                                                                                                          100%   12     6.8KB/s   00:00    
+fatih@fatih-MS-7C96:~/Documents/Bash Scripting/coping file to vm using ssh$ fatih@192.168.0.241
+
+fatih@fatih-MS-7C96:~/Documents/Bash Scripting/coping file to vm using ssh$ ssh fatih@192.168.0.241
+
+Expanded Security Maintenance for Applications is not enabled.
+
+0 updates can be applied immediately.
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+Last login: Tue Nov 18 12:11:05 2025 from 192.168.0.118
+fatih@fatih-HP-Pavilion-x360-Convertible-14-ba0xx:~$ cd Documents
+fatih@fatih-HP-Pavilion-x360-Convertible-14-ba0xx:~/Documents$ ls
+autoupdate.sh  nashid.txt
+fatih@fatih-HP-Pavilion-x360-Convertible-14-ba0xx:~/Documents$ 
+
