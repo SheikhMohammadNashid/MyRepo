@@ -1,0 +1,84 @@
+(myenv) fatih@fatih-MS-7C96:~/Documents/virtual env py/env1$ python3 ssh.py
+Connecting to 192.168.0.241 ...
+Connected Successfully!
+
+--- Running: whoami ---
+fatih
+
+--- Running: uptime ---
+16:48:45 up 0 min,  2 users,  load average: 2.62, 0.88, 0.31
+
+--- Running: ls -la /var/log ---
+total 11324
+drwxrwxr-x  16 root              syslog             4096 Nov 22 16:48 .
+drwxr-xr-x  11 root              root               4096 Oct 30 18:47 ..
+-rw-r--r--   1 root              root               4505 Nov 17 21:22 alternatives.log
+-rw-r--r--   1 root              root               4082 Oct 30 19:34 alternatives.log.1
+drwxr-xr-x   2 root              root               4096 Nov 21 10:36 apt
+-rw-r-----   1 syslog            adm              168989 Nov 22 16:48 auth.log
+-rw-r-----   1 syslog            adm              145133 Nov 16 10:37 auth.log.1
+-rw-r-----   1 syslog            adm                5102 Nov  9 08:44 auth.log.2.gz
+-rw-r-----   1 syslog            adm               13994 Nov  7 16:36 auth.log.3.gz
+-rw-------   1 root              root               3955 Nov 22 16:48 boot.log
+-rw-------   1 root              root               9906 Nov 22 16:48 boot.log.1
+-rw-------   1 root              root              12488 Nov 21 10:34 boot.log.2
+-rw-------   1 root              root              10381 Nov 20 10:46 boot.log.3
+-rw-------   1 root              root              13168 Nov 19 12:14 boot.log.4
+-rw-------   1 root              root              10099 Nov 18 10:51 boot.log.5
+-rw-------   1 root              root              13019 Nov 17 10:13 boot.log.6
+-rw-------   1 root              root              14195 Nov 16 10:36 boot.log.7
+-rw-r--r--   1 root              root                  0 Aug 28 14:22 bootstrap.log
+-rw-rw----   1 root              utmp               4992 Nov 18 12:10 btmp
+-rw-rw----   1 root              utmp               1152 Oct 30 18:49 btmp.1
+drwxr-xr-x   2 root              root               4096 Nov 22 16:48 cups
+drwxr-xr-x   2 cups-browsed      lpadmin            4096 Aug 28 14:22 cups-browsed
+drwxr-xr-x   2 root              root               4096 Jul 25 21:38 dist-upgrade
+-rw-r-----   1 root              adm               93014 Nov 22 16:48 dmesg
+-rw-r-----   1 root              adm               91565 Nov 21 10:34 dmesg.0
+-rw-r-----   1 root              adm               24298 Nov 20 10:46 dmesg.1.gz
+-rw-r-----   1 root              adm               23996 Nov 19 12:14 dmesg.2.gz
+-rw-r-----   1 root              adm               23916 Nov 18 10:51 dmesg.3.gz
+-rw-r-----   1 root              adm               24157 Nov 17 10:14 dmesg.4.gz
+-rw-r--r--   1 root              root              61587 Nov 21 10:36 dpkg.log
+-rw-r--r--   1 root              root             185875 Oct 31 22:53 dpkg.log.1
+-rw-r--r--   1 root              root                  0 Aug 28 14:22 faillog
+-rw-r--r--   1 root              root               5421 Oct 30 19:44 fontconfig.log
+-rw-r--r--   1 root              root               2443 Nov 22 16:48 gpu-manager.log
+-rw-r--r--   1 root              root               2400 Nov 21 22:58 gpu-manager-switch.log
+-rw-r--r--   1 root              root                 85 Nov  7 20:21 gufw.log
+drwxr-xr-x   3 root              root               4096 Aug 28 14:22 hp
+drwxr-xr-x   2 root              root               4096 Oct 30 18:47 installer
+drwxr-sr-x+  3 root              systemd-journal    4096 Oct 30 18:47 journal
+-rw-r-----   1 syslog            adm             1109312 Nov 22 16:48 kern.log
+-rw-r-----   1 syslog            adm             1184462 Nov 16 10:37 kern.log.1
+-rw-r-----   1 syslog            adm               54796 Nov  9 08:44 kern.log.2.gz
+-rw-r-----   1 syslog            adm              350723 Nov  7 16:36 kern.log.3.gz
+-rw-rw-r--   1 root              utmp             292292 Nov 19 18:03 lastlog
+drwxr-xr-x   2 root              root               4096 Nov 22 16:48 lightdm
+-rw-r--r--   1 root              root               1614 Nov 22 16:48 mintsystem.log
+-rw-r--r--   1 root              root                455 Oct 30 18:41 mintsystem.timestamps
+drwxr-xr-x   2 root              root               4096 May 30 20:54 openvpn
+-rw-r--r--   1 root              root                 20 Nov 22 16:48 prime-supported.log
+drwx------   2 root              root               4096 Aug 28 14:22 private
+lrwxrwxrwx   1 root              root                 39 Oct 30 18:35 README -> ../../usr/share/doc/systemd/README.logs
+drwxr-x---   2 root              adm                4096 Jul 22 02:07 samba
+drwx------   2 speech-dispatcher root               4096 Apr  7  2024 speech-dispatcher
+-rw-r-----   1 syslog            adm             3198867 Nov 22 16:48 syslog
+-rw-r-----   1 syslog            adm             3273173 Nov 16 10:37 syslog.1
+-rw-r-----   1 syslog            adm              137726 Nov  9 08:44 syslog.2.gz
+-rw-r-----   1 syslog            adm              800447 Nov  7 16:36 syslog.3.gz
+drwxr-xr-x   2 root              root               4096 Nov 22 16:48 teamviewer15
+drwxr-xr-x   2 root              root               4096 Oct 30 20:16 timeshift
+-rw-r--r--   1 root              root                  0 Nov 11 18:25 ubuntu-advantage-apt-hook.log
+-rw-r--r--   1 root              root                113 Nov 22 16:48 ubuntu-system-adjustments-adjust-grub-title.log
+-rw-r--r--   1 root              root                 26 Nov 22 16:48 ubuntu-system-adjustments-start.log
+-rw-r--r--   1 root              root                 26 Nov 21 22:58 ubuntu-system-adjustments-stop.log
+-rw-r-----   1 syslog            adm                   0 Nov  9 08:44 ufw.log
+-rw-r-----   1 syslog            adm               55728 Nov  7 20:21 ufw.log.1
+-rw-r-----   1 syslog            adm               35706 Nov  6 23:05 ufw.log.2.gz
+-rw-rw-r--   1 root              utmp              98688 Nov 22 16:48 wtmp
+-rw-r--r--   1 root              root              47964 Nov 22 16:48 Xorg.0.log
+-rw-r--r--   1 root              root              49916 Nov 21 22:58 Xorg.0.log.old
+
+--- Running: echo 'Hello from Nashid' ---
+Hello from Nashid
