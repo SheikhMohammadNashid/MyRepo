@@ -1,0 +1,8 @@
+python3 compresspdf.py  Template.pdf
+Created output folder: compressed_output
+Processing 'Template.pdf'...
+Done! Saved to: compressed_output/Template_compressed.pdf
+Original:   684.62 KB
+Compressed: 683.81 KB
+Reduction:  0.12%
+
