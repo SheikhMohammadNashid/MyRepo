@@ -1,0 +1,22 @@
+fatih@fatih-MS-7C96:~/Documents$ ansible-playbook hosting.yml -u ans1
+
+PLAY [Hosting portfolio] *********************************************************************************************************************************************
+
+TASK [Gathering Facts] ***********************************************************************************************************************************************
+[WARNING]: Host '192.168.0.241' is using the discovered Python interpreter at '/usr/bin/python3.12', but future installation of another Python interpreter could cause a different interpreter to be discovered. See https://docs.ansible.com/ansible-core/2.19/reference_appendices/interpreter_discovery.html for more information.
+ok: [192.168.0.241]
+
+TASK [Install Apache (Debian/Ubuntu)] ********************************************************************************************************************************
+ok: [192.168.0.241]
+
+TASK [Start and enable Apache service (Ubuntu)] **********************************************************************************************************************
+ok: [192.168.0.241]
+
+TASK [Copy portfolio HTML file to web directory] *********************************************************************************************************************
+changed: [192.168.0.241]
+
+TASK [Restart Apache after copying file] *****************************************************************************************************************************
+changed: [192.168.0.241]
+
+PLAY RECAP ***********************************************************************************************************************************************************
+192.168.0.241              : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
