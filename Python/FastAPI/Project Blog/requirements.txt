@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+
+sqlmodel
+sqlalchemy
+
+psycopg[binary]
+
+passlib[bcrypt]
+bcrypt
+
+python-jose[cryptography]
+python-multipart
+
+pydantic
+
