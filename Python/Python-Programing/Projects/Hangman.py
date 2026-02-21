@@ -16,7 +16,7 @@ while tries > 0 and "_" in word_completion:
     print("Tries:", tries)
 
     guess = input("Guess a letter: ").lower()
-
+ 
     # Check if already guessed
     if guess in guessed_word:
         print("You already guessed that letter")
