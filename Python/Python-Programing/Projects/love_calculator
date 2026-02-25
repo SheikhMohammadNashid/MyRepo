@@ -1,0 +1,28 @@
+def love_calculator(name1, name2):
+    combined_name = (name1 + name2).lower()
+
+    #count letters in true
+    t = combined_name.count("t")
+    r = combined_name.count("r")
+    u = combined_name.count("u")
+    e = combined_name.count("e")
+
+    true_score = t + r + u + e
+
+    #count similer letter in love
+
+    l = combined_name.count("l")
+    o = combined_name.count("o")
+    v = combined_name.count("v")
+    e = combined_name.count("e")
+
+    love_score = l + o + v + e
+
+    final_score = true_score + love_score
+    print(final_score)
+
+
+love_calculator("Constantine Kovar", "katherine schwarzenegger")
+    
+
+    

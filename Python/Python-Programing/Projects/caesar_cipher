@@ -1,0 +1,37 @@
+alphabets = [
+    'a','b','c','d','e','f','g','h','i','j','k','l','m',
+    'n','o','p','q','r','s','t','u','v','w','x','y','z'
+]
+
+direction = input("Type 'encode' to encrypt, type 'decrypt' to decrypt:\n").lower()
+text = input("Type your message:\n").lower()
+shift = int(input("Type the shift number:\n"))
+
+def encrypt(text, shift):
+    cipher_text = ""
+    for letter in text:
+        if letter in alphabets:
+            shift_text = (alphabets.index(letter) + shift) % len(alphabets)
+            cipher_text += alphabets[shift_text]
+        else:
+            cipher_text += letter   # keep spaces and symbols
+    print(cipher_text)
+
+
+def decrypt(text, shift):
+    original_text = ""
+    for letter in text:
+        if letter in alphabets:
+            shift_text = (alphabets.index(letter) - shift) % len(alphabets)
+            original_text += alphabets[shift_text]
+        else:
+            original_text += letter
+    print(original_text)
+
+
+if direction == "encode":
+    encrypt(text, shift)
+elif direction == "decrypt":
+    decrypt(text, shift)
+else:
+    print("You have entered the wrong input")
